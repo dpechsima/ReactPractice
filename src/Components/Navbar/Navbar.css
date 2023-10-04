@@ -1,12 +1,11 @@
 .navbar-container {
-    position: fixed;
+    position: sticky;
     top: 0%;
     left: 0%;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    padding: 0 20px;
-    overflow: hidden;
+    width: 97.5vw;
+    padding: 0 0px;
     background-color: #870e4f;
 }
 
@@ -21,7 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    margin: 15px;
+   
 }
 
 .link {
@@ -29,8 +29,18 @@
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+    
 }
 
 a{
     color: white;
+}
+
+@media (max-width:600px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+    .navbar-links{
+        flex-direction: column;
+    }
 }

@@ -1,22 +1,38 @@
+
 import Navbar from './Components/Navbar/Navbar.jsx'
 import './App.css'
 import { Contenido } from './Components/Contenido/Contenido'
 import { Astros } from './Components/Astros/Astros'
+import { Route, Routes } from 'react-router-dom'
+import { About } from './Components/About/About.jsx'
 
 function App() {
 
   const linkData = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/' },
-    { name: 'Contact', href: '/' }
+    { name: 'About', href: '/about' },
+    { name: 'Astros', href: '/astros' }
   ]
-  const URL = 'http://api.open-notify.org/astros.json'
 
   return (
     <>
-      <Navbar links={linkData} />
-      <Contenido source = {URL}/>
-      <Astros/>
+      <Navbar links={linkData} title="Navbar" />
+      <Routes>
+        <Route
+          element={<Contenido />}
+          path='/'
+        />
+
+        <Route
+          element={<About />}
+          path='/about'
+        />
+
+        <Route
+          element={<Astros />}
+          path='/astros'
+        />
+      </Routes>
     </>
   )
 }

@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import '../Navbar/Navbar.css'
 
-function Navbar ({links}) {
+function Navbar ({links, title}) {
 
     console.log(links)
 
@@ -9,7 +10,7 @@ function Navbar ({links}) {
             <div className='navbar-container'>
 
                 <div className='navbar-title'>
-                    <h2>Navbar</h2>
+                    <h1>{title}</h1>
                 </div>
 
                 <div className='navbar-links'>
@@ -17,7 +18,7 @@ function Navbar ({links}) {
                         links.map((link,index) => (
                     
                             <div key={index} className='link'>
-                                <a href={link.href}>{link.name}</a>
+                                <Link  to={link.href}>{link.name}</Link>
                             </div>
                         )
                         )

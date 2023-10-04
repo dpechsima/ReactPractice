@@ -1,15 +1,22 @@
-.astroContainer{
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: skyblue;
-border-radius: 15px;
-color: black;
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.astroName{
+.astroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+    border-radius: 15px;
+    color: black;
+    justify-content: space-around;
+    margin: 5%;
+    width: 300px;
 
 }
-.astroStation{
-    
-}
+
+.astroName {}
+
+.astroStation {}
