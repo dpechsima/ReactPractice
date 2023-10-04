@@ -1,0 +1,36 @@
+.navbar-container {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #870e4f;
+}
+
+.navbar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a{
+    color: white;
+}

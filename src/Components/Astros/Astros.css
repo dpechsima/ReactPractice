@@ -1,0 +1,15 @@
+.astroContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: skyblue;
+border-radius: 15px;
+color: black;
+}
+
+.astroName{
+
+}
+.astroStation{
+    
+}
